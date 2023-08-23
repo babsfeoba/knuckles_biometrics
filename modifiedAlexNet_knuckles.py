@@ -35,7 +35,7 @@ cnt_train = 0
 
 for i in range(1, test_no + 1, 1):
     img = cv2.imread(
-        "C:/Users/usr310/Documents/Knuckles/Minor/Gen_Test/"+str(i)+".bmp")
+        "test_directory"+str(i)+".bmp")
     res = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
     test_matrix[cnt_test] = res
 
@@ -43,7 +43,7 @@ for i in range(1, test_no + 1, 1):
 
 for i in range(1, train_no + 1, 1):
     img = cv2.imread(
-        "C:/Users/usr310/Documents/Knuckles/Minor/Gen_Train/"+str(i)+".bmp")
+        "train_directory"+str(i)+".bmp")
     res = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
     training_matrix[cnt_train] = res
 
